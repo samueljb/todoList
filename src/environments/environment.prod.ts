@@ -8,5 +8,9 @@ export const environment = {
     storageBucket: 'todolist-62a58.appspot.com',
     messagingSenderId: '834956103192',
     appId: '1:834956103192:web:0fd485b48d06d774'
+  },
+  serverGCF: {
+    Url: 'https://us-central1-todolist-62a58.cloudfunctions.net/',
+    sendIdToServer: 'https://us-central1-todolist-62a58.cloudfunctions.net/helloWorld'
   }
 };
