@@ -11,10 +11,10 @@ const routes: Routes = [
     path: 'home',
     loadChildren: './home/home.module#HomePageModule'
   },
-  {
-    path: 'list',
-    loadChildren: './list/list.module#ListPageModule'
-  }
+  { path: 'list', loadChildren: './todo/list/list.module#ListPageModule' },
+  { path: 'create-update', loadChildren: './todo/create-update/create-update.module#CreateUpdatePageModule' },
+  { path: 'create-update/:id', loadChildren: './todo/create-update/create-update.module#CreateUpdatePageModule' },
+  { path: 'details/:id', loadChildren: './todo/details/details.module#DetailsPageModule' }
 ];
 
 @NgModule({
